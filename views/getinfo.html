@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Natural Eating</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet" type="text/css">
+</head>
+<nav class="navbar navbar-dark bg-dark navbar-static-top navbar-expand-md">
+<body>
+    <div class="container">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span>
+        </button> <a class="navbar-brand" href="#">Natural Eating</a>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav mr-auto">
+                <li class="active nav-item"><a href="home#" class="nav-link">Home</a>	
+                </li>	
+                <li class="nav-item"><a href="lowcarbdiet" class="nav-link">Low Carb Diet</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="jumbotron">
+    <div class="container">
+        <h1>Why a Low Carb Diet is best for weight loss?</h1>
+        <p>Want to learn what foods are high in protein but low in carbs?</p>
+        <br>
+        <p><a class="btn btn-primary btn-lg" href="/mealplans" role="button">Get Meal Plans</a>
+        </p>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <h3>Not all fat is bad</h3>
+            <p>Though some are very high in saturated fat, not all fats are unhealthy for you. We need dietary fats to give our body energy and to support cell growth.
+                p>
+              <div class="caption">Your Info</div>
+                  <ul>
+                     <% uerinfo.forEach(function(userinfo) { %>
+                        <p>Name: <%= userinfo.name %></p>
+                        <p>Interest: <%= userinfo.interest %></p>
+                     <% }); %>
+                  </ul>
+            </p>
+            </div>
+        <div class="col-lg-4">
+            <h3>Right amount of protein is the key</h3>
+            <p>Eating a high-protein diet can cause weight loss, even without calorie counting, portion control or carb restriction.
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
